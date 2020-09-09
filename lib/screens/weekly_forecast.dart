@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:weather/screens/loading.dart';
 import 'package:weather/screens/weather_list.dart';
-
 class WeeklyForecast extends StatefulWidget {
 
   List date;
