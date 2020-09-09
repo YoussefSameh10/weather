@@ -42,7 +42,7 @@ class _LocationEntryState extends State<LocationEntry> {
                     style: labelStyle,
                   ),
                   style: labelStyle,
-                  //////icon: Icon(Icons.location_on, color: Color.fromRGBO(179, 179, 0, 1)),
+                  //////////icon: Icon(Icons.location_on, color: Color.fromRGBO(179, 179, 0, 1)),
                   value: _city,
                   onChanged: (val) {
                     setState(() {
