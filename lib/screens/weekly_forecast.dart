@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:weather/screens/loading.dart';
 import 'package:weather/shared/strings.dart';
+import 'package:weather/shared/styles.dart';
 
 class WeeklyForecast extends StatefulWidget {
 
@@ -43,72 +44,104 @@ class _WeeklyForecastState extends State<WeeklyForecast> {
               leading: Image.network(CURRENT_WEATHER_ICON + widget.icon[0] + '@2x.png'),
               title: Text(
                 '${widget.date[0]}\n'
-                'Day: ${widget.tempDay[0]}\t\t\t\t\t Night: ${widget.tempNight[0]}'
+                '${widget.tempDay[0]}\t/\t${widget.tempNight[0]}',
+                style: dateStyle,
               ),
-              subtitle: Text(widget.description[0]),
+              subtitle: Text(
+                widget.description[0],
+                style: decriptionWeeklyStyle,
+              ),
             ),
             SizedBox(height: 30,),
             ListTile(
               leading: Image.network(CURRENT_WEATHER_ICON + widget.icon[1] + '@2x.png'),
               title: Text(
-                  '${widget.date[1]}\n'
-                      'Day: ${widget.tempDay[1]}\t\t\t\t\t Night: ${widget.tempNight[1]}'
+                '${widget.date[1]}\n'
+                '${widget.tempDay[1]}\t/\t${widget.tempNight[1]}',
+                style: dateStyle,
               ),
-              subtitle: Text(widget.description[1]),
+              subtitle: Text(
+                widget.description[1],
+                style: decriptionWeeklyStyle
+              ),
             ),
             SizedBox(height: 30,),
             ListTile(
               leading: Image.network(CURRENT_WEATHER_ICON + widget.icon[2] + '@2x.png'),
               title: Text(
-                  '${widget.date[2]}\n'
-                      'Day: ${widget.tempDay[2]}\t\t\t\t\t Night: ${widget.tempNight[2]}'
+                '${widget.date[2]}\n'
+                '${widget.tempDay[2]}\t/\t${widget.tempNight[2]}',
+                style: dateStyle,
               ),
-              subtitle: Text(widget.description[2]),
+              subtitle: Text(
+                widget.description[2],
+                style: decriptionWeeklyStyle
+              ),
             ),
             SizedBox(height: 30,),
             ListTile(
               leading: Image.network(CURRENT_WEATHER_ICON + widget.icon[3] + '@2x.png'),
               title: Text(
-                  '${widget.date[3]}\n'
-                      'Day: ${widget.tempDay[3]}\t\t\t\t\t Night: ${widget.tempNight[3]}'
+                '${widget.date[3]}\n'
+                '${widget.tempDay[3]}\t/\t${widget.tempNight[3]}',
+                style: dateStyle,
               ),
-              subtitle: Text(widget.description[3]),
+              subtitle: Text(
+                widget.description[3],
+                style: decriptionWeeklyStyle
+              ),
             ),
             SizedBox(height: 30,),
             ListTile(
               leading: Image.network(CURRENT_WEATHER_ICON + widget.icon[4] + '@2x.png'),
               title: Text(
-                  '${widget.date[4]}\n'
-                      'Day: ${widget.tempDay[4]}\t\t\t\t\t Night: ${widget.tempNight[4]}'
+                '${widget.date[4]}\n'
+                '${widget.tempDay[4]}\t/\t${widget.tempNight[4]}',
+                style: dateStyle,
               ),
-              subtitle: Text(widget.description[4]),
+              subtitle: Text(
+                widget.description[4],
+                style: decriptionWeeklyStyle
+              ),
             ),
             SizedBox(height: 30,),
             ListTile(
               leading: Image.network(CURRENT_WEATHER_ICON + widget.icon[5] + '@2x.png'),
               title: Text(
-                  '${widget.date[5]}\n'
-                      'Day: ${widget.tempDay[5]}\t\t\t\t\t Night: ${widget.tempNight[5]}'
+                '${widget.date[5]}\n'
+                '${widget.tempDay[5]}\t/\t${widget.tempNight[5]}',
+                style: dateStyle,
               ),
-              subtitle: Text(widget.description[5]),
+              subtitle: Text(
+                widget.description[5],
+                style: decriptionWeeklyStyle
+              ),
             ),
             SizedBox(height: 30,),
             ListTile(
               leading: Image.network(CURRENT_WEATHER_ICON + widget.icon[6] + '@2x.png'),
               title: Text(
-                  '${widget.date[6]}\n'
-                      'Day: ${widget.tempDay[6]}\t\t\t\t\t Night: ${widget.tempNight[6]}'
+                '${widget.date[6]}\n'
+                '${widget.tempDay[6]}\t/\t${widget.tempNight[6]}',
+                style: dateStyle,
               ),
-              subtitle: Text(widget.description[6]),
+              subtitle: Text(
+                widget.description[6],
+                style: decriptionWeeklyStyle
+              ),
             ),
             SizedBox(height: 30,),
             ListTile(
               leading: Image.network(CURRENT_WEATHER_ICON + widget.icon[7] + '@2x.png'),
               title: Text(
-                  '${widget.date[7]}\n'
-                      'Day: ${widget.tempDay[7]}\t\t\t\t\t Night: ${widget.tempNight[7]}'
+                '${widget.date[7]}\n'
+                '${widget.tempDay[7]}\t/\t${widget.tempNight[7]}',
+                style: dateStyle,
               ),
-              subtitle: Text(widget.description[7]),
+              subtitle: Text(
+                widget.description[7],
+                style: decriptionWeeklyStyle
+              ),
             ),
           ],
         ),

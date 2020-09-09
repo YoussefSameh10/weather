@@ -23,13 +23,13 @@ class _LocationEntryState extends State<LocationEntry> {
       body: Container(
         decoration: BoxDecoration(
             image:DecorationImage(
-                image: AssetImage('assets/egypt_map.jpg'),
-                fit:BoxFit.scaleDown
+                image: AssetImage('assets/bg_vec.png'),
+                fit:BoxFit.cover
             )
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             SizedBox(height: 80,),
             Row(
@@ -42,6 +42,10 @@ class _LocationEntryState extends State<LocationEntry> {
                     style: labelStyle,
                   ),
                   style: labelStyle,
+                  icon: Icon(
+                    Icons.location_on,
+                    color: Color.fromRGBO(179, 179, 0, 1),
+                  ),
                   value: _city,
                   onChanged: (val) {
                     setState(() {
@@ -52,7 +56,7 @@ class _LocationEntryState extends State<LocationEntry> {
                     DropdownMenuItem(
                       child: Text(
                         'Alexandria',
-                        //style: labelStyle,
+                        style: dropDownItemStyle,
                       ),
                       value: 'Alexandria',
                       onTap: () {
@@ -64,7 +68,7 @@ class _LocationEntryState extends State<LocationEntry> {
                     DropdownMenuItem(
                       child: Text(
                         'Cairo',
-                        style: labelStyle,
+                        style: dropDownItemStyle,
                       ),
                       value: 'Cairo',
                       onTap: () {
@@ -76,7 +80,7 @@ class _LocationEntryState extends State<LocationEntry> {
                     DropdownMenuItem(
                       child: Text(
                         'Ismailia',
-                        style: labelStyle,
+                        style: dropDownItemStyle,
                       ),
                       value: 'Ismailia',
                       onTap: () {
@@ -88,7 +92,7 @@ class _LocationEntryState extends State<LocationEntry> {
                     DropdownMenuItem(
                       child: Text(
                         'Menia',
-                        style: labelStyle,
+                        style: dropDownItemStyle,
                       ),
                       value: 'Menia',
                       onTap: () {
@@ -100,7 +104,7 @@ class _LocationEntryState extends State<LocationEntry> {
                     DropdownMenuItem(
                       child: Text(
                         'Sinai',
-                        style: labelStyle,
+                        style: dropDownItemStyle,
                       ),
                       value: 'Sinai',
                       onTap: () {
@@ -112,7 +116,7 @@ class _LocationEntryState extends State<LocationEntry> {
                     DropdownMenuItem(
                       child: Text(
                         'Suez',
-                        style: labelStyle,
+                        style: dropDownItemStyle,
                       ),
                       value: 'Suez',
                       onTap: () {
@@ -121,19 +125,20 @@ class _LocationEntryState extends State<LocationEntry> {
                         });
                       },
                     ),
+
                   ],
                 )
               ],
             ),
-            SizedBox(height: 440,),
+            SizedBox(height: 40,),
             Container(
-              height: 70,
-              width: 170,
+              height: 50,
+              width: 120,
               child: RaisedButton(
                 textColor: Color.fromRGBO(179, 179, 0, 1),
                 child: Text(
                   'Submit',
-                  style: TextStyle(fontSize: 30),
+                  style: TextStyle(fontSize: 25),
                 ),
                 onPressed: () {
                   if(_city == null){

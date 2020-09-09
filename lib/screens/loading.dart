@@ -21,7 +21,7 @@ class _LoadingState extends State<Loading> {
     CurrentWeatherService instance = CurrentWeatherService(city: widget.city);
     await instance.getCurrentWeather();
     AssetImage bgImg;
-    if(instance.description == 'shower rain' || instance.description == 'rain' || instance.description == 'snow' || instance.description == 'heavy intensity rain' || instance.description == 'moderate rain'){
+    if(instance.description == 'shower rain' || instance.description == 'rain' || instance.description == 'snow' || instance.description == 'heavy intensity rain' || instance.description == 'moderate rain' || instance.description == 'light rain'){
       if(instance.icon.substring(instance.icon.length - 1) == 'd'){
         bgImg = AssetImage('assets/rain_day.jpg');
       }else{
@@ -58,7 +58,7 @@ class _LoadingState extends State<Loading> {
     WeeklyForecastService instance = WeeklyForecastService(city: widget.city);
     await instance.getWeeklyForecast();
     AssetImage bgImg;
-    if(instance.description[0] == 'shower rain' || instance.description[0] == 'rain' || instance.description[0] == 'snow' || instance.description[0] == 'heavy intensity rain' || instance.description[0] == 'moderate rain'){
+    if(instance.description[0] == 'shower rain' || instance.description[0] == 'rain' || instance.description[0] == 'snow' || instance.description[0] == 'heavy intensity rain' || instance.description[0] == 'moderate rain' || instance.description[0] == 'light rain'){
       if(instance.icon[0].substring(instance.icon[0].length - 1) == 'd'){
         bgImg = AssetImage('assets/rain_day.jpg');
       }else{

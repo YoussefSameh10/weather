@@ -18,8 +18,24 @@ class CurrentWeather extends StatefulWidget {
 
 class _CurrentWeatherState extends State<CurrentWeather> {
 
+  TextStyle cityNameStyle;
+  TextStyle tempStyle;
+  TextStyle descriptionStyle;
+
+
   @override
   Widget build(BuildContext context) {
+
+    if(widget.icon.substring(widget.icon.length - 1) == 'd'){
+      cityNameStyle = cityNameDayStyle;
+      tempStyle = tempDayStyle;
+      descriptionStyle = descriptionDayStyle;
+    }else{
+      cityNameStyle = cityNameNightStyle;
+      tempStyle = tempNightStyle;
+      descriptionStyle = descriptionNightStyle;
+    }
+
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.blue[900],
