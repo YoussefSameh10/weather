@@ -1,6 +1,6 @@
 # weather
 
-A new Flutter application.
+Flutter weather application for the egyptian cities.
 
 ## Getting Started
 
