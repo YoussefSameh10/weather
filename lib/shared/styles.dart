@@ -34,7 +34,7 @@ final TextStyle descriptionDayStyle = TextStyle(
 final TextStyle cityNameNightStyle = TextStyle(
     fontSize: 60,
     fontWeight: FontWeight.bold,
-    color: Colors.grey[400]
+    color: Colors.grey[600]
 );
 
 final TextStyle tempNightStyle = TextStyle(
